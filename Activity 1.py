@@ -5,12 +5,11 @@ name = [
     ['judy', 'ken', 'laura'] 
 ]
 
-for hello in name:
-    for names in hello:
-        print(names)
-
-name[0].remove("alice")
-
-new_name = input("Alice Detected Add New Name:")
-name[0].append(new_name)
+for data in nameList:
+    if "alice" in data:
+        data.remove("alice")
+    print(namesList)
+else:
+name = input("Alice Detected Add New Name:")
+namesList.append(name)
 print(name)
